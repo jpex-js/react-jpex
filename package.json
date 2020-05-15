@@ -1,0 +1,20 @@
+{
+  "name": "react-jpex",
+  "version": "1.0.1",
+  "main": "src/index.js",
+  "module": "src/index.es.js",
+  "types": "src/index.d.ts",
+  "repository": "git@github.com:jpex-js/react-jpex.git",
+  "author": "Jack Ellis <jack.ellis@godaddy.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/react": "^16.9.35",
+    "jpex": "^3.1.0",
+    "react": "^16.8.0",
+    "typescript": "^3.9.2"
+  },
+  "peerDependencies": {
+    "jpex": "^3.1.0",
+    "react": "^16.8.0"
+  }
+}

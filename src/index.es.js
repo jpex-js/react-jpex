@@ -7,6 +7,10 @@ export function useJpex() {
   return useContext(context);
 }
 
+export function useResolve(name) {
+  return useJpex().resolve(name);
+}
+
 export function Provider(props) {
   var parent = useJpex();
 

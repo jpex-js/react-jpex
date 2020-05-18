@@ -7,6 +7,10 @@ function useJpex() {
   return react.useContext(context);
 }
 
+function useResolve(name) {
+  return useJpex().resolve(name);
+}
+
 function Provider(props) {
   var parent = useJpex();
 
@@ -26,5 +30,6 @@ function Provider(props) {
 
 module.exports = {
   useJpex: useJpex,
+  useResolve: useResolve,
   Provider: Provider
 };

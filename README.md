@@ -11,6 +11,15 @@ const Page = () => {
 };
 ```
 
+## useResolve
+```tsx
+const Page = () => {
+  const thing = useResolve<Thing>();
+
+  return (...);
+};
+```
+
 ## Provider
 ```tsx
 const App = () => (

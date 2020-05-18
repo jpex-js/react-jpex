@@ -20,10 +20,10 @@ csstype@^2.2.0:
   resolved "https://registry.yarnpkg.com/csstype/-/csstype-2.6.10.tgz#e63af50e66d7c266edb6b32909cfd0aabe03928b"
   integrity sha512-D34BqZU4cIlMCY93rZHbrq9pjTAQJ3U8S8rfBqjwHxkGPThWFjzZDQpgMJY0QViLxth6ZKYiwFBo14RdN44U/w==
 
-jpex@^3.1.0:
-  version "3.1.0"
-  resolved "https://registry.yarnpkg.com/jpex/-/jpex-3.1.0.tgz#91226adedb86bd614a278a037e2a782de3987102"
-  integrity sha512-xH3fVOMomRU8sbTRCtsJTpGCI+5YVyXndz2g/GBG1mLa0TPDCClpAHRfo2xUioO7rtXs9QTwc5ZJQcJv+khjZQ==
+jpex@^3.2.0:
+  version "3.2.1"
+  resolved "https://registry.yarnpkg.com/jpex/-/jpex-3.2.1.tgz#c0bae6050a13d055753379c87f9cd6de66cb2841"
+  integrity sha512-ED6voGVcR2y3S77pfVjygzmtmoGCnt9OfQawRA7hUpu4O2hv8R3c1mmOUbq+2Sy/G1Bd8cFM2TGXOMc9edygJA==
 
 "js-tokens@^3.0.0 || ^4.0.0":
   version "4.0.0"

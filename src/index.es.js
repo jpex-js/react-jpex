@@ -7,8 +7,14 @@ export function useJpex() {
   return useContext(context);
 }
 
-export function useResolve(name) {
-  return useJpex().resolve(name);
+export function useResolve(name, deps) {
+  const jpex = useJpex();
+  if (deps) {
+    return useMemo(function() {
+      return jpex.resolve(name);
+    }, [ jpex, name ].concat(deps));
+  }
+  return jpex.resolve(name);
 }
 
 export function Provider(props) {

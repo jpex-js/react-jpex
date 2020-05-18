@@ -2,6 +2,10 @@
 this is just a simple context wrapper around `jpex`
 
 ## useJpex
+```ts
+() => JpexInstance
+```
+
 ```tsx
 const Page = () => {
   const jpex = useJpex();
@@ -12,6 +16,10 @@ const Page = () => {
 ```
 
 ## useResolve
+```ts
+(name?: string, deps?: any[]) => any
+```
+
 ```tsx
 const Page = () => {
   const thing = useResolve<Thing>();
@@ -21,6 +29,10 @@ const Page = () => {
 ```
 
 ## Provider
+```ts
+ComponentType<{ value: JpexInstance }>
+```
+
 ```tsx
 const App = () => (
   <Provider value={specificJpexContainer}>

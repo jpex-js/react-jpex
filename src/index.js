@@ -1,5 +1,7 @@
+function _interopDefault (ex) { return (ex && (typeof ex === 'object') && 'default' in ex) ? ex['default'] : ex; }
+
 var react = require('react');
-var jpex = require('jpex');
+var jpex = _interopDefault(require('jpex'));
 
 var context = react.createContext(jpex);
 

@@ -1,6 +1,6 @@
 {
   "name": "react-jpex",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "main": "src/index.js",
   "module": "src/index.es.js",
   "types": "src/index.d.ts",

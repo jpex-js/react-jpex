@@ -21,9 +21,9 @@ csstype@^2.2.0:
   integrity sha512-D34BqZU4cIlMCY93rZHbrq9pjTAQJ3U8S8rfBqjwHxkGPThWFjzZDQpgMJY0QViLxth6ZKYiwFBo14RdN44U/w==
 
 jpex@^3.2.0:
-  version "3.2.1"
-  resolved "https://registry.yarnpkg.com/jpex/-/jpex-3.2.1.tgz#c0bae6050a13d055753379c87f9cd6de66cb2841"
-  integrity sha512-ED6voGVcR2y3S77pfVjygzmtmoGCnt9OfQawRA7hUpu4O2hv8R3c1mmOUbq+2Sy/G1Bd8cFM2TGXOMc9edygJA==
+  version "3.5.1"
+  resolved "https://registry.yarnpkg.com/jpex/-/jpex-3.5.1.tgz#d84788af0f7d683e2010d270b981f078085851f6"
+  integrity sha512-9j5ACnf2Sh9jW0NkSdN20I6aY+KzKVRXfCOOxqpwRD82ANSg1/YKYvkR3VjWQ5bvbZX+CZ6Iu2FJYGM4eqOvPA==
 
 "js-tokens@^3.0.0 || ^4.0.0":
   version "4.0.0"

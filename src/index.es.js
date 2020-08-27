@@ -7,12 +7,15 @@ export function useJpex() {
   return useContext(context);
 }
 
-export function useResolve(name, deps) {
+export function useResolve(name, opts) {
   const jpex = useJpex();
-  if (deps) {
+  if (Array.isArray(opts)) {
     return useMemo(function() {
       return jpex.resolve(name);
-    }, [ jpex, name ].concat(deps));
+    }, [ jpex, name ].concat(opts));
+  }
+  if (opts && typeof opts === 'object') {
+    return jpex.resolve(name, opts);
   }
   return jpex.resolve(name);
 }

@@ -9,12 +9,15 @@ function useJpex() {
   return react.useContext(context);
 }
 
-function useResolve(name, deps) {
+function useResolve(name, opts) {
   const jpex = useJpex();
-  if (deps) {
-    return react.useMemo(function() {
+  if (Array.isArray(opts)) {
+    return useMemo(function() {
       return jpex.resolve(name);
-    }, [ jpex, name ].concat(deps));
+    }, [ jpex, name ].concat(opts));
+  }
+  if (opts && typeof opts === 'object') {
+    return jpex.resolve(name, opts);
   }
   return jpex.resolve(name);
 }

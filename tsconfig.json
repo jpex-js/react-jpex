@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "module": "ESNext",
+    "target": "ESNext",
+    "allowJs": false,
+    "noImplicitAny": true,
+    "moduleResolution": "node",
+    "alwaysStrict": true,
+    "declaration": false,
+    "esModuleInterop": true,
+    "types": [ "node" ],
+    "jsx": "preserve"
+  },
+  "include": [
+    "src",
+    "@types"
+  ],
+  "exclude": [
+    "src/**/__tests__/**/*"
+  ]
+}

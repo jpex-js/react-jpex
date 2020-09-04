@@ -1,0 +1,46 @@
+{
+  "name": "jpex",
+  "version": "0.0.0-142efcfc",
+  "description": "Javascript Prototype Extension",
+  "main": "dist/cjs/jpex.js",
+  "module": "dist/es/jpex.js",
+  "types": "dist/es/index.d.ts",
+  "scripts": {
+    "clear-cache": "rm -rf node_modules/.cache",
+    "test": "ava",
+    "test:debug": "ava debug",
+    "coverage": "nyc ava",
+    "lint": "eslint './src/**/*.ts' && eslint './plugin/**/*.ts' && tsc --noEmit",
+    "build:prepare": "rm -rf dist",
+    "build:js": "rollup --config ./rollup.config.js",
+    "build:ts": "tsc -d --outDir dist/es --emitDeclarationOnly ./src/index.ts",
+    "build:post": "node ./postbuild-checks.js",
+    "build": "yarn build:prepare && yarn build:js && yarn build:ts && yarn build:post",
+    "prepublishOnly": "yarn build",
+    "semantic-release": "semantic-release"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "commit-msg": "commitlint --edit"
+    }
+  },
+  "lint-staged": {
+    "linters": {
+      "src/**/*.{js,ts}": [
+        "eslint -c ./.eslintrc.js",
+        "git add"
+      ]
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jpex-js/jpex.git"
+  },
+  "author": "Jack Ellis",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jpex-js/jpex/issues"
+  },
+  "homepage": "https://github.com/jpex-js/jpex"
+}

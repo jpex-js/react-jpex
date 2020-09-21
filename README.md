@@ -28,6 +28,23 @@ const Page = () => {
 };
 ```
 
+## useRegister
+```ts
+(...callbacks: (jpex: Jpex) => void) => void
+```
+This simple hook just calls the given callback functions with the current jpex instance when the component mounts.
+
+Unlike `useEffect`, the callbacks are invoked _immediately_, meaning you can register your depndencies and then start resolving them straight away.
+
+```ts
+const Page = () => {
+  useRegister((jpex) => {
+    jpex.constant<Thing>(thing);
+  });
+  const thing = useResolve<Thing>();
+};
+``` 
+
 ## Provider
 ```ts
 ComponentType<{ value: JpexInstance }>

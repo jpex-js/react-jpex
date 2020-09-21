@@ -7,7 +7,7 @@ browserEnv();
 babel({
   extensions: [ '.js', '.ts', '.tsx' ],
   plugins: [
-    [ '@jpex/babel-plugin', {
+    [ '@jpex-js/babel-plugin', {
       publicPath: true,
       // identifier: [ 'jpex', 'jpex3', 'jpex4' ],
     }],

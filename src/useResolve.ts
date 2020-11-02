@@ -1,9 +1,12 @@
 import { useMemo } from 'react';
-import { JpexInstance } from 'jpex';
 import useJpex from './useJpex';
 
-// @ts-ignore
-type Opts = Parameters<JpexInstance['resolve']>[0]
+interface Opts {
+  optional?: boolean,
+  with?: {
+    [key: string]: any,
+  },
+}
 
 interface UseResolve {
   <T>(): T

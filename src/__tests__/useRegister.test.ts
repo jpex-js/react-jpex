@@ -4,7 +4,7 @@ import {
   Provider,
   useRegister,
 } from '..';
-import jpex, { JpexInstance } from 'jpex';
+import jpex, { Jpex } from 'jpex';
 
 test('calls a callback on mount', (t) => {
   let called = false;
@@ -18,8 +18,8 @@ test('calls a callback on mount', (t) => {
 });
 test('passes the current jpex instance', (t) => {
   const newJpex = jpex.extend();
-  let ioc: JpexInstance;
-  const callback = (jpex: JpexInstance) => {
+  let ioc: Jpex;
+  const callback = (jpex: Jpex) => {
     ioc = jpex;
   };
 

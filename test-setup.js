@@ -9,7 +9,6 @@ babel({
   plugins: [
     [ '@jpex-js/babel-plugin', {
       publicPath: true,
-      // identifier: [ 'jpex', 'jpex3', 'jpex4' ],
     }],
   ],
   presets: [

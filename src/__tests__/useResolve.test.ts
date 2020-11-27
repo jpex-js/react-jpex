@@ -4,11 +4,10 @@ import {
   useResolve,
   Provider,
 } from 'react-jpex';
-import jpex4 from 'jpex-v4';
-import jpex3 from 'jpex-v3';
+import base from 'jpex';
 
-test('resolves a dependency with jpex v4', (t) => {
-  const jpex = jpex4.extend();
+test('resolves a dependency', (t) => {
+  const jpex = base.extend();
   type Foo = string;
   jpex.factory<Foo>(() => 'foo');
 
@@ -21,22 +20,9 @@ test('resolves a dependency with jpex v4', (t) => {
 
   t.is(current, 'foo');
 });
-test('resolves a dependency with jpex v3', (t) => {
-  const jpex = jpex3.extend();
-  type Foo = string;
-  jpex.factory<Foo>(() => 'foo');
 
-  const { result: { current } } = renderHook(() => useResolve<Foo>(), {
-    wrapper: Provider,
-    initialProps: {
-      value: jpex,
-    },
-  });
-
-  t.is(current, 'foo');
-});
 test('resolves a dependency with options', (t) => {
-  const jpex = jpex4.extend();
+  const jpex = base.extend();
   type Foo = string;
   type Bah = string;
   jpex.factory<Foo>((bah: Bah) => `foo ${bah}`);
@@ -55,7 +41,7 @@ test('resolves a dependency with options', (t) => {
   t.is(current, 'foo baz');
 });
 test('resolves a dependency with memoization', (t) => {
-  const jpex = jpex4.extend();
+  const jpex = base.extend();
   type Foo = string;
   jpex.factory<Foo>(() => 'foo');
 
@@ -69,7 +55,7 @@ test('resolves a dependency with memoization', (t) => {
   t.is(current, 'foo');
 });
 test('resolves a dependency by name', (t) => {
-  const jpex = jpex4.extend();
+  const jpex = base.extend();
   jpex.factory('foo', [], () => 'foo');
 
   const { result: { current } } = renderHook(() => useResolve('foo'), {

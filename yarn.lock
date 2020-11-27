@@ -4768,19 +4768,7 @@ java-properties@^1.0.0:
   resolved "https://registry.yarnpkg.com/java-properties/-/java-properties-1.0.2.tgz#ccd1fa73907438a5b5c38982269d0e771fe78211"
   integrity sha512-qjdpeo2yKlYTH7nFdK0vbZWuTCesk4o63v5iVOlhMQPfuIZQfW/HI35SjfhA+4qpg36rnFSvUK5b1m+ckIblQQ==
 
-"jpex-v3@npm:jpex@^3.2.0":
-  version "3.5.1"
-  resolved "https://registry.yarnpkg.com/jpex/-/jpex-3.5.1.tgz#d84788af0f7d683e2010d270b981f078085851f6"
-  integrity sha512-9j5ACnf2Sh9jW0NkSdN20I6aY+KzKVRXfCOOxqpwRD82ANSg1/YKYvkR3VjWQ5bvbZX+CZ6Iu2FJYGM4eqOvPA==
-
-"jpex-v4@npm:jpex@^4.0.0":
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/jpex/-/jpex-4.0.0.tgz#69a849f58ad819b766e2bb260b08b5c7bf758193"
-  integrity sha512-qmD6Fzjq9wqkzjpSuTR2KeXYxtJtjh0xiaU1Vwj72jrlEmbjC926Q740sr1wLTznxcehJOSDmr9MPUp1ojH+ng==
-  dependencies:
-    "@jpex-js/babel-plugin" "^1.0.0"
-
-"jpex@npm:jpex@^4.0.0":
+jpex@^4.1.0:
   version "4.1.0"
   resolved "https://registry.yarnpkg.com/jpex/-/jpex-4.1.0.tgz#41b08ed31b8f7779ab78e09be446f6eabd780845"
   integrity sha512-icRsf6ZMzjEzUCF6NrzJ4kDM3M4t2SGRnA7TajjO6NH5cCdnBLZWy/ggbYqVQgMeBx+PzHgdsljJdaID2WdGbw==

@@ -34,9 +34,7 @@
     "ava": "^3.12.1",
     "browser-env": "^3.3.0",
     "eslint": "^7.8.1",
-    "jpex": "npm:jpex@^4.0.0",
-    "jpex-v3": "npm:jpex@^3.2.0",
-    "jpex-v4": "npm:jpex@^4.0.0",
+    "jpex": "^4.1.0",
     "module-alias": "^2.2.2",
     "nyc": "^15.1.0",
     "react": "^17.0.1",
@@ -49,7 +47,7 @@
     "typescript": "^4.0.5"
   },
   "peerDependencies": {
-    "jpex": "^3.0.0 || ^4.0.0",
+    "jpex": "^4.1.0",
     "react": "^16.8.0 || ^17.0.0"
   }
 }

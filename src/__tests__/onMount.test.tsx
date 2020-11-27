@@ -38,6 +38,31 @@ test('passes the current jpex instance', (t) => {
   t.is(ioc, newJpex);
 });
 
+test('passes additional config into the jpex instance', (t) => {
+  let ioc: Jpex;
+  const callback = (jpex: Jpex) => {
+    ioc = jpex;
+  };
+
+  render(
+    <Provider
+      precedence="passive"
+      inherit={false}
+      lifecycle="none"
+      globals={false}
+      nodeModules={false}
+      onMount={callback}
+    >
+      <div/>
+    </Provider>
+  );
+
+  t.is(ioc.$$config.precedence, 'passive');
+  t.is(ioc.$$config.lifecycle, 'none');
+  t.is(ioc.$$config.globals, false);
+  t.is(ioc.$$config.nodeModules, false);
+});
+
 test('does not call on subsequent renders', (t) => {
   let callCount = 0;
   const callback = () => {

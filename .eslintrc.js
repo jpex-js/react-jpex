@@ -25,6 +25,8 @@ module.exports = {
       ],
     },
     'rules': {
+      'no-redeclare': 'off',
+      '@typescript-eslint/no-redeclare': [ 'error' ],
       'no-use-before-define': 'off',
       '@typescript-eslint/no-use-before-define': 'error',
       'no-unused-vars': 'off',

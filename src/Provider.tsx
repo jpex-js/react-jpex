@@ -11,11 +11,11 @@ interface Props {
 
 const { Provider } = context;
 
-const JpexProvider = ({
+export default function JpexProvider({
   value,
   children,
   onMount,
-}: Props) => {
+}: Props) {
   const parent = useJpex();
   const mounted = useRef(false);
 
@@ -39,7 +39,4 @@ const JpexProvider = ({
       {children}
     </Provider>
   );
-};
-JpexProvider.displayName = 'JpexProvider';
-
-export default JpexProvider;
+}

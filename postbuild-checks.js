@@ -1,9 +1,9 @@
 const { promises: fs } = require('fs');
-const jpex = require('./dist/cjs/jpex');
+const jpex = require('./dist/cjs/react-jpex');
 
 const expectedFiles = [
-  'dist/cjs/jpex.js',
-  'dist/es/jpex.js',
+  'dist/cjs/react-jpex.js',
+  'dist/es/react-jpex.js',
   'dist/es/index.d.ts',
 ];
 const expectedExports = [

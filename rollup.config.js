@@ -6,12 +6,12 @@ export default {
   input: 'src/index.ts',
   output: [
     {
-      file: 'dist/es/jpex.js',
+      file: 'dist/es/react-jpex.js',
       format: 'es',
       exports: 'named',
     },
     {
-      file: 'dist/cjs/jpex.js',
+      file: 'dist/cjs/react-jpex.js',
       format: 'cjs',
       exports: 'named',
     },

@@ -4,12 +4,14 @@ const jpex = require('./dist/cjs/react-jpex');
 const expectedFiles = [
   'dist/cjs/react-jpex.js',
   'dist/es/react-jpex.js',
-  'dist/es/index.d.ts',
+  'dist/ts/index.d.ts',
 ];
 const expectedExports = [
   [ 'useJpex', '[object Function]' ],
   [ 'useResolve', '[object Function]' ],
   [ 'Provider', '[object Function]' ],
+  [ 'useRegister', '[object Function]' ],
+  [ 'encase', '[object Function]' ],
 ];
 
 const run = async() => {

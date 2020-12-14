@@ -1,5 +1,5 @@
 import { Jpex } from 'jpex';
-import { useJpex } from '.';
+import useJpex from './useJpex';
 import { useRef } from 'react';
 
 export default function useRegister(...fns: ((jpex: Jpex) => void)[]) {

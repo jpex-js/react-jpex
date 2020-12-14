@@ -49,6 +49,24 @@ const Page = () => {
 };
 ``` 
 
+## Encase
+```ts
+(...deps: any[]): (...args: any[]) => any
+```
+This is the same as jpex's own `encase` method, but uses the react context to use the correct jpex instance.
+
+You can encase both hooks and entire components:
+```ts
+const useLocation = encase((window: Window) => () => window.location);
+```
+```tsx
+const MyComponent = encase((window: Window) => () => (
+  <div>{window.location.pathname}</div>
+));
+```
+
+For more info see https://github.com/jpex-js/jpex#jpexencase
+
 ## Provider
 ```ts
 ComponentType<{

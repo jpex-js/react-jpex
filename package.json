@@ -16,7 +16,8 @@
     "build:ts": "tsc -d --outDir dist/ts --emitDeclarationOnly",
     "build:post": "node ./postbuild-checks.js",
     "build": "yarn build:prepare && yarn build:js && yarn build:ts && yarn build:post",
-    "prepublishOnly": "yarn build"
+    "prepublishOnly": "yarn build",
+    "ci": "yarn install && yarn lint && yarn test && yarn build"
   },
   "devDependencies": {
     "@ava/babel": "^1.0.1",

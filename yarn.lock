@@ -1098,10 +1098,15 @@
   resolved "https://registry.yarnpkg.com/@istanbuljs/schema/-/schema-0.1.3.tgz#e45e384e4b8ec16bce2fd903af78450f6bf7ec98"
   integrity sha512-ZXRY4jNvVgSVQ8DL3LTcakaAtXwTVUxE81hslsyD2AtoXW/wVob10HkOJ1X/pAlcI7D+2YoZKg5do8G/w6RYgA==
 
-"@jpex-js/babel-plugin@^1.3.0", "@jpex-js/babel-plugin@^1.4.0":
+"@jpex-js/babel-plugin@^1.3.0":
   version "1.6.0"
   resolved "https://registry.yarnpkg.com/@jpex-js/babel-plugin/-/babel-plugin-1.6.0.tgz#d1301fa556ee4ea5d29e30accc59f85a3c2d1cbd"
   integrity sha512-dd2lOWFb2XudJSPkO8vgwjQv+KxQqYM+V3yjZAEtZ3KX4B+PJYeBxDfob2YsDl1SKqZ3xtZHK0CJFaWQZY4t0g==
+
+"@jpex-js/babel-plugin@^1.8.0":
+  version "1.8.0"
+  resolved "https://registry.yarnpkg.com/@jpex-js/babel-plugin/-/babel-plugin-1.8.0.tgz#c0318f45762fdccc440e851be04c7e7216e6564b"
+  integrity sha512-B5SGp2PcdCXWgob3eV2YmA205xqG8qxJuYg3ZFiKvFGJCMvjqnrHx8HAG9NH43IFGry3rt3lCZCiito/dEy9jw==
 
 "@jridgewell/gen-mapping@^0.1.0":
   version "0.1.1"
@@ -4598,10 +4603,10 @@ java-properties@^1.0.0:
   resolved "https://registry.yarnpkg.com/java-properties/-/java-properties-1.0.2.tgz#ccd1fa73907438a5b5c38982269d0e771fe78211"
   integrity sha512-qjdpeo2yKlYTH7nFdK0vbZWuTCesk4o63v5iVOlhMQPfuIZQfW/HI35SjfhA+4qpg36rnFSvUK5b1m+ckIblQQ==
 
-jpex@^4.3.0:
-  version "4.3.3"
-  resolved "https://registry.yarnpkg.com/jpex/-/jpex-4.3.3.tgz#b2824169d79e8d45f05849dd744ae62fb04916bf"
-  integrity sha512-0Zke6xDqbDS2+Qz6vMoXMAnzotQl2t8MrNmk8ChrL2GKeE0lLZH8ts0LAMGS+i6SocBen3Hs+/e5qUNd0m0cvg==
+jpex@^5.0.0:
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/jpex/-/jpex-5.0.0.tgz#78a987126e6ceca73cb735b9f01e1f2b8745ff2c"
+  integrity sha512-C1MeWfaxyD7n6XubSKHhxlvDl1RPWCNyj5YnfwTkHMagt1I3PKiuHF+kXEbfDU9FqtNBXuKHN5ErDuq8dlsPhA==
   dependencies:
     "@jpex-js/babel-plugin" "^1.3.0"
 
